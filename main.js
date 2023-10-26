@@ -11,6 +11,7 @@ let discount;
 //discountapplied
 let discountapplied;
 
+
 if(clientAge<18){
 discount= (kmPrice * 20) / 100;
 discountapplied = 20;
@@ -38,4 +39,4 @@ console.log('discount', discount)
 console.log('ticketPrice', ticketPrice)
 
 //Visibletot
-document.getElementById('ticketprice').innerHTML = (`Il prezzo del tuo biglietto è ${parseFloat(ticketPrice).toFixed(2)} con sconto del ${discountapplied}`)
+document.getElementById('ticketprice').innerHTML = (`Il prezzo del tuo biglietto è ${parseFloat(ticketPrice).toFixed(2)} € con sconto del ${discountapplied}`)
